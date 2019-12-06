@@ -1,1 +1,86 @@
-Hello World
+
+
+
+<h1>The Android App Market on Google Play</h1>
+
+
+Mobile apps are everywhere. They are easy to create and can be lucrative. Because of these two factors, more and more apps are being developed. In this project, you will do a comprehensive analysis of the Android app market by comparing over ten thousand apps in Google Play across different categories. You'll look for insights in the data to devise strategies to drive growth and retention.
+
+The goal of this notebook is to illustrate how we managed to apply data cleaning processes on the two given datasets and to find correlations between its attributes and how they can affect each other. Moreover, we will discuss some statistics and figures related to the datasets.
+
+<h1>A. Investigating different app categories</h1> 
+
+<h1>1- How many unique categories are in the dataset? </h1> 
+<label >
+
+First, we removed the duplicates in the dataset. After counting the number of unique categories, we found that there are 34 different categories in the dataset. Then we counted the number of apps in each category and we found that there is a category called "1.9" that contains only one app. We searched for this category and we realized that it is related to the "LIFESTYLE" category. So our dataset now has 33 different categories.   
+</label>
+
+<h2>Which of these categories have the fewest number of apps? </h2> 
+<div style="margin-bottom: 5px;">
+<img src="Fig1.jpg">
+</div>
+
+<label style="margin-top: 100px;">
+
+In the figure above, we can observe that the categories BEAUTY, COMICS, PARENTING, AUTO_AND_VEHICLES, LIBRARIES_AND_DEMO, WEATHER HOUSE_AND_HOME and EVENTS ART_AND_DESIGN have the fewest number of apps which does not exceed 100 apps.     
+
+</label>
+
+<h2>3- Which of these categories have the highest number of apps?</h2>
+
+In the figure above, we can also observe that the categories FAMILY, GAMES and TOOLS have the highest number of apps which exceeds 500 apps.                     
+
+#### 4- What type of categories do people mostly install? 
+
+<div style="margin-bottom: 5px;">
+<img src="Fig2.png">
+</div>
+<br/>
+<label style="margin-top: 100px;">
+In the figure above, we can observe that GAME, COMMUNICATION and TOOLS are the top three categories that people mostly install. GAME comes first with more than 13 Billion installs, COMMUNICATION comes second with more than 11 billion installs and TOOLS comes third with more than 8 Billion installs.
+
+</label>
+
+
+<h1 >B. Exploring Free and Paid apps</h1>
+
+<h2> 1- What are the categories that contain the most expensive apps? </h2>
+
+<div style="margin-bottom: 5px;">
+<img src="Fig5.jpg"> 
+</div>
+
+<label style="margin-top: 100px;">
+
+The figure above shows the categories that have the most expensive apps in the dataset. LIFESTYLE, FINANCE and FAMILY have the most expensive apps which nearly cost $400.
+
+</label>
+
+
+<h2> 2- Which apps in the above categories have the more than 1000 installs? </h2>
+
+<div style="margin-bottom: 5px;">
+<img src="Fig6.jpg"> 
+</div>
+
+<div style="margin-bottom: 5px;">
+<img src="Fig7.jpg"> 
+</div>
+
+<label style="margin-top: 100px;">
+
+We observed that the most expensive application in the three categories mentioned above is the same application but with different editions. For example, all the applications contains "I'm rich" or " i am rich" concatinated with different words like "Pro" or "Premium". This observation took our attention as the number of installs of each variant is more than 1000 installs given that each app costs nearly 400$.
+
+</label>
+
+
+<h2> 3- How many categories contain free and paid apps together? </h2>
+
+<label style="margin-top: 100px;">
+29 out of 33 categories contain both free and paid apps, the other 4 categories contain only free apps. 
+</label>
+
+<div style="margin-bottom: 5px;">
+<img src="Fig8.jpg"> 
+</div>
