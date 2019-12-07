@@ -43,10 +43,6 @@ The goal of this notebook is to illustrate how we managed to apply data cleaning
 <b>Android Ver:</b> Min required Android version (as when scraped)
 
 
-
-
-
-
 <h1>Our Data Processing Pipeline</h1>
 
 <div style="margin-bottom: 5px;">
@@ -166,4 +162,31 @@ We observed that the most expensive application in the three categories mentione
 <img src="Fig8.jpg"> 
 </div>
 
-    
+
+<h1> Investigating App categories </h1>
+
+<h2> 1. What are the top rated categories ? </h2>
+
+<label>
+We computed the average rating of all categories using the rating of each application in each category to determine the top rated categories. We found that the top five categories are Events, Art and Design, Books and Reference, Education and Personalization. However the top installed categories are Game, Communication, Tools, Productivity and Social, in which there is no matching between top rated categories and top installed categories. The aforementioned result was expected because it is logically that the category got high number of installed  might not get a high rating as this means that people discover  bugs and features they prefer not listed in these apps in the top installed categories.
+</label>
+
+<div style="margin-bottom: 5px;">
+<img src="Bar_RatingVSCategory.jpg"> 
+</div>
+
+<h2> 2. Representing the rating values by Boxplot diagram; we can view the minimum, maximum, mean and outliers </h2>
+
+<label>
+
+        For example, for the 'ART AND DESIGN'; the maximum was at 5.0, the minimum was at 3.25 and the mean was slightly below 4.5
+
+        and for the 'BOOKS AND REFERENCE'; the maximum was at 5.0, the minimum was at 3.7 , the mean was slightly above 4.0 and showing multiple outliers below the minimum.
+        
+        and similarly for the rest of the values.
+
+</label>
+
+<div style="margin-bottom: 5px;">
+<img src="BoxPlot_RatingVSCategory.jpg"> 
+</div>
