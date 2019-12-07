@@ -7,6 +7,54 @@
 Mobile apps are everywhere. They are easy to create and can be lucrative. Because of these two factors, more and more apps are being developed. In this project, you will do a comprehensive analysis of the Android app market by comparing over ten thousand apps in Google Play across different categories. You'll look for insights in the data to devise strategies to drive growth and retention.
 
 The goal of this notebook is to illustrate how we managed to apply data cleaning processes on the two given datasets and to find correlations between its attributes and how they can affect each other. Moreover, we will discuss some statistics and figures related to the datasets.
+<h2>Columns description:</h2> 
+
+<b>App:</b> Application name
+<br/>
+<br/>
+<b>Category:</b> Category the app belongs to
+<br/>
+<br/>
+<b>Rating:</b> Overall user rating of the app (as when scraped)
+<br/>
+<br/>
+<b>Reviews:</b> Number of user reviews for the app (as when scraped)
+<br/>
+<br/>
+<b>Installs:</b> Number of user downloads/installs for the app (as when scraped)
+<br/>
+<br/>
+<b>Type:</b> Paid or Free
+<br/>
+<br/>
+<b>Content Rating:</b> Age group the app is targeted at - Children / Mature 21+ / Adult
+<br/>
+<br/>
+<b>Genres:</b> An app can belong to multiple genres (apart from its main category). For eg, a musical family game will belong to Music, Game, Family genres.
+<br/>
+<br/>
+
+<b>Last Updated:</b> Date when the app was last updated on Play Store (as when scraped)
+<br/>
+<br/>
+<b>Current Ver:</b> Current version of the app available on Play Store (as when scraped)
+<br/>
+<br/>
+<b>Android Ver:</b> Min required Android version (as when scraped)
+
+
+
+
+
+
+<h1>Our Data Processing Pipeline</h1>
+
+<div style="margin-bottom: 5px;">
+
+    <img src="pipeline.jpeg"> 
+
+</div>
+
 
 <h1>A. Investigating different app categories</h1> 
 
@@ -45,7 +93,40 @@ In the figure above, we can observe that GAME, COMMUNICATION and TOOLS are the t
 
 <h1 >B. Exploring Free and Paid apps</h1>
 
-<h2> 1- What are the categories that contain the most expensive apps? </h2>
+<h2> 1- Which type of apps are mostly downloaded  ? (whether free or paid depending on num. of installs ?</h2>
+
+<div style="margin-bottom: 5px;">
+<img src="Fig3.jpg">
+</div>
+
+<label style="margin-top: 100px;">
+The chart above represents the percentage of free installed apps compared to the paid ones. This comparison seems to be unexpected as the difference between the two values is huge. However, in the chart below we compared the number of free apps to the number of paid ones in the dataset and we found out that the difference is huge as well. 
+</label>
+
+<h2> 2- How many categories contain free and paid apps together? </h2>
+
+<label style="margin-top: 100px;">
+29 out of 33 categories contain both free and paid apps, the other 4 categories contain only free apps. 
+</label>
+
+<div style="margin-bottom: 5px;">
+<img src="Fig8.jpg"> 
+</div>
+
+
+<h2> 3- How many free and paid applications?  </h2>
+
+<div style="margin-bottom: 5px;">
+<img src="Fig4.jpg">
+</div>
+
+
+<label style="margin-top: 100px;">
+So it makes sense that the difference between the number of installs of both types is huge.
+</label>
+
+
+<h2> 4- What are the categories that contain the most expensive apps? </h2>
 
 <div style="margin-bottom: 5px;">
 <img src="Fig5.jpg"> 
@@ -58,7 +139,7 @@ The figure above shows the categories that have the most expensive apps in the d
 </label>
 
 
-<h2> 2- Which apps in the above categories have the more than 1000 installs? </h2>
+<h2> 5- Which apps in the above categories have the more than 1000 installs? </h2>
 
 <div style="margin-bottom: 5px;">
 <img src="Fig6.jpg"> 
@@ -75,7 +156,7 @@ We observed that the most expensive application in the three categories mentione
 </label>
 
 
-<h2> 3- How many categories contain free and paid apps together? </h2>
+<h2> 6- How many categories contain free and paid apps together? </h2>
 
 <label style="margin-top: 100px;">
 29 out of 33 categories contain both free and paid apps, the other 4 categories contain only free apps. 
@@ -84,3 +165,5 @@ We observed that the most expensive application in the three categories mentione
 <div style="margin-bottom: 5px;">
 <img src="Fig8.jpg"> 
 </div>
+
+    
